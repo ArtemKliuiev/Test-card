@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #2C2F33;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            background-color: #3C69A3;
+            height: 300px;
+            width: 300px;
+            /* text-align: center; */
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            border-radius: 15px;
+        }
+        .card__main{
+            border-radius: 15px;
+            display: flex;
+            display: none;
+            background-color: #A3713C;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            text-align: center;
+        }
+        .card:hover .card__main{
+            display: flex;
+        }
+        .card__title{
+            margin-top: 10px;
+            color: #33312C;  
+        }
+        .card__btn{
+            display: block;
+            height: 200px;
+            width: 80%;
+            line-height: 200px;
+            border-radius: 10px;
+            font-size: 22px;
+            text-decoration: none;
+            color: #ffffff;  
+            background: #3C69A3;
+            max-width: 100%;
+            margin: 0 auto 45px;
+        }
+        .card__btn:hover{
+            color: #3C69A3;  
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card__main">
+            <div class="card__title">КАРТОЧКА</div>
+            <a href="page2.html" class="card__btn">КНОПКА</a>
+        </div>
+    </div>
+</body>
+</html>
